@@ -1,128 +1,122 @@
 # personal-Lab-Report
 A personal cybersecurity lab built using virtual machines to safely practice penetration testing, network scanning, and web application security. Designed as an isolated environment for hands-on learning during a cybersecurity internship program.
 
-📌 Overview
+## 📌 Overview
 
 This repository documents the implementation of a personal cybersecurity practice lab created as part of a Cybersecurity Internship Program.
 
 The lab provides a safe and isolated penetration-testing environment using virtualization.
 
-🎯 Objective
+---
+
+## 🎯 Objective
 
 To build an isolated cybersecurity lab for practicing:
 
-Vulnerability Assessment
+- Vulnerability Assessment  
+- Web Application Testing  
+- Network Scanning  
+- Security Tool Usage  
 
-Web Application Testing
+---
 
-Network Scanning
+## 🏗 Lab Architecture
 
-Security Tool Usage
+- **Attacker Machine:** Kali Linux  
+- **Target Machine:** DVWA / OWASP Juice Shop  
 
-🏗 Lab Architecture
+**Networking:**
+- Adapter 1: NAT (Internet access)  
+- Adapter 2: Host-Only (Isolated lab network)  
 
-Attacker Machine: Kali Linux
+---
 
-Target Machine: DVWA / OWASP Juice Shop
+## ⚙ Prerequisites
 
-Networking:
+| Requirement | Recommendation |
+|------------|---------------|
+| RAM | Minimum 8GB |
+| Disk | 40–60GB |
+| CPU | Virtualization Enabled |
+| OS | Windows / Linux / Mac |
 
-Adapter 1: NAT (Internet access)
+---
 
-Adapter 2: Host-Only (Isolated lab network)
+## 🧰 Tools Used
 
-⚙ Prerequisites
-Requirement	Recommendation
-RAM	Minimum 8GB
-Disk	40–60GB
-CPU	Virtualization Enabled
-OS	Windows / Linux / Mac
-🧰 Tools Used
+- Oracle VirtualBox  
+- Kali Linux  
+- DVWA / OWASP Juice Shop  
+- Nmap  
+- Burp Suite  
+- Wireshark  
 
-Oracle VirtualBox
+---
 
-Kali Linux
-
-DVWA / OWASP Juice Shop
-
-Nmap
-
-Burp Suite
-
-Wireshark
-
-🌐 Network Configuration
+## 🌐 Network Configuration
 
 Two adapters were configured on Kali Linux:
 
-NAT – Internet access
-
-Host-Only – Private sandbox network
+- **NAT** – Internet access  
+- **Host-Only** – Private sandbox network  
 
 This ensures complete isolation from real systems.
 
-🛠 Implementation Steps
+---
 
-Installed VirtualBox and configured Host-Only network
+## 🛠 Implementation Steps
 
-Imported Kali Linux VM
+1. Installed VirtualBox and configured Host-Only network  
+2. Imported Kali Linux VM  
+3. Assigned CPU & RAM  
+4. Deployed DVWA target  
+5. Verified IP connectivity  
+6. Performed ping and Nmap scans  
+7. Tested Burp Suite interception  
+8. Captured traffic using Wireshark  
 
-Assigned CPU & RAM
+---
 
-Deployed DVWA target
+## ✅ Validation
 
-Verified IP connectivity
+- Ping Test  
+- Nmap Scan  
+- Burp Suite Proxy  
+- Wireshark Packet Capture  
 
-Performed ping and Nmap scans
+Screenshots available in `/screenshots`
 
-Tested Burp Suite interception
+---
 
-Captured traffic using Wireshark
+## 📚 Learning Outcomes
 
-✅ Validation
+- Virtual machine deployment  
+- Network segmentation (NAT vs Host-Only)  
+- Vulnerable app setup  
+- Basic reconnaissance  
+- Ethical hacking environment design  
 
-Ping Test
+---
 
-Nmap Scan
-
-Burp Suite Proxy
-
-Wireshark Packet Capture
-
-Screenshots available in /screenshots
-
-📚 Learning Outcomes
-
-Virtual machine deployment
-
-Network segmentation (NAT vs Host-Only)
-
-Vulnerable app setup
-
-Basic reconnaissance
-
-Ethical hacking environment design
-
-🏁 Conclusion
+## 🏁 Conclusion
 
 A fully isolated cybersecurity lab was successfully implemented. This environment provides a strong foundation for penetration testing practice without risking production systems.
 
-👤 Author
+---
 
-ASODIYA ROHAN
+## 👤 Author
+
+ASODIYA ROHAN  
 
 Cybersecurity Internship Program – January 2026
 
-📎 References
+---
 
-VirtualBox
+## 📎 References
 
-Kali Linux
-
-OWASP Juice Shop
-
-DVWA
-
-Burp Suite
-
-Wireshark
+- VirtualBox  
+- Kali Linux  
+- OWASP Juice Shop  
+- DVWA  
+- Burp Suite  
+- Wireshark
